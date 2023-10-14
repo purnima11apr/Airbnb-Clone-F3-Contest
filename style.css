@@ -1,0 +1,545 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  background-color: black;
+  margin-top: -10px;
+  padding-top: 20px;
+}
+
+nav {
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  position: sticky;
+  top: 0;
+  flex: 1;
+  z-index: 100;
+}
+
+nav div ul li {
+  list-style: none;
+  margin: 5px;
+}
+
+nav div ul li:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+nav div ul li a {
+  text-decoration: none;
+}
+
+nav div ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-dropdown {
+  position: relative;
+}
+
+.profile-button {
+  background-color: rgba(255, 255, 255, 1);
+  height: 40px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin-top: -10px;
+}
+
+.profile-options {
+  display: none;
+  position: absolute;
+  background-color: #f8f8f8;
+  list-style-type: none;
+}
+
+.profile-options li {
+  padding: 5px 0;
+}
+
+.profile-button:hover + .profile-options,
+.profile-options:hover {
+  display: block;
+}
+
+.border {
+  border-right: 1px solid rgb(208, 202, 202);
+  padding-right: 20px;
+}
+
+.search {
+  margin: 10px;
+  background: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 40%;
+  height: 20px;
+  border-radius: 50px;
+  padding: 20px;
+  padding-left: 50px;
+  margin-left: 350px;
+}
+
+.image {
+  background-color: rgba(222, 49, 81, 1);
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+}
+
+.lower {
+  color: rgba(107, 114, 128, 1);
+  font-size: small;
+}
+
+.hero {
+  padding: 50px 80px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+.hero img {
+  width: 90vw;
+}
+.img-text {
+  padding: 50px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img-text h1 {
+  color: white;
+  font-size: 50px;
+}
+.imflexible {
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: papayawhip;
+  color: #a33a95;
+}
+
+.inspiration {
+  background-color: rgba(255, 255, 255, 1);
+  padding-top: 50px;
+}
+
+.inspiration h1 {
+  margin-left: 80px;
+  font-size: xx-large;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 280px;
+  margin-top: 30px;
+}
+.card-image {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.card-text {
+  font-size: 16px;
+  color: #dccccc;
+  margin-bottom: 20px;
+}
+
+.discoverh1 {
+  margin-left: 80px;
+  font-size: xx-large;
+  margin-top: 50px;
+}
+
+.discover {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  padding-top: 50px;
+}
+
+.hero2 {
+  background-image: url(assets/shifaaz-shamoon-O0xQcGATOw4-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 40%;
+  margin: 0 30px;
+}
+
+.hero3 {
+  background-image: url(assets/kevin-mccutcheon-APDMfLHZiRA-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 40%;
+  margin: 0 30px;
+}
+
+.experience:hover {
+  background: grey;
+  color: white;
+}
+
+.to-do {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.to-do h2 {
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.experience {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: rgba(55, 65, 81, 1);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.gift {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.giftcard {
+  text-align: center;
+  margin-right: 50px;
+}
+
+.gift-heading {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.gift-button {
+  padding: 15px 30px;
+  background-color: rgba(0, 0, 0, 1);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.gift-button:hover {
+  background-color: gray;
+}
+
+.host {
+  background-image: url(assets/jeffrey-keenan-pUhxoSapPFA-unsplash.jpg);
+  height: 500px;
+  width: 80%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px;
+  margin: auto;
+}
+
+.host h1 {
+  font-size: 76px;
+  color: #fff;
+  margin-bottom: 80px;
+}
+
+.host button {
+  padding: 15px 30px;
+  background-color: #fff;
+  color: rgba(55, 65, 81, 1);
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.host button:hover {
+  background-color: gray;
+  color: white;
+}
+
+#footer-part1 {
+  padding: 90px 80px;
+}
+#footer-part1 p {
+  font-size: 45px;
+  margin: 0;
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+.destination {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.destination p {
+  font-size: 20px !important;
+  padding: 0 20px;
+  cursor: pointer;
+  color: rgb(156, 155, 155);
+}
+.destination p:hover {
+  color: black;
+}
+.locations {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 20px;
+}
+.place {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  width: 20vw;
+}
+.place h6 {
+  font-size: 16px;
+  margin: 0;
+}
+.place p {
+  font-size: 16px !important;
+  color: rgb(156, 155, 155);
+  padding: 0 !important;
+}
+.place a {
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+  margin: 0;
+}
+#footer-part2 {
+  padding: 90px 80px;
+  background-color: rgb(243, 243, 243);
+}
+td,
+th {
+  text-align: left;
+  padding-bottom: 0.5vw;
+  padding-right: 11vw;
+}
+td {
+  color: rgb(156, 155, 155);
+}
+.line {
+  background-color: rgb(207, 207, 207);
+  margin-top: 50px;
+  width: 90vw;
+  height: 1px;
+}
+.bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.left-part,
+.right-part {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.left-part p {
+  color: rgb(156, 155, 155);
+}
+.right-part p {
+  color: black;
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+/* Media query for phones */
+@media only screen and (max-width: 600px) {
+  nav {
+    padding: 10px;
+  }
+
+  nav img {
+    display: none;
+  }
+
+  nav div ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .search div {
+    margin-bottom: 10px;
+  }
+
+  .search .image {
+    margin-top: 10px;
+  }
+
+  .search .image img {
+    width: 15px;
+    height: 15px;
+  }
+
+  .hero img {
+    width: 100%;
+  }
+
+  .img-text {
+    padding: 20px;
+  }
+
+  .img-text h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .imflexible {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
+  .inspiration h1 {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .cards {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .card-content {
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .card-text {
+    font-size: 14px;
+  }
+
+  .discoverh1 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+  .hero2,
+  .hero3 {
+    width: 90%;
+    margin: 20px 5%;
+  }
+
+  .gift {
+    padding: 20px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .giftcard {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .gift-heading {
+    font-size: 30px;
+  }
+
+  .gift-button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .host {
+    padding: 20px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .host h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .host button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  main {
+    padding: 0 10px;
+  }
+}
