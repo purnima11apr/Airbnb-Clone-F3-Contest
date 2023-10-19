@@ -77,7 +77,8 @@ nav div ul {
 
 .border {
   border-right: 1px solid rgb(208, 202, 202);
-  padding-right: 20px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .search {
@@ -87,25 +88,36 @@ nav div ul {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  width: 40%;
-  height: 20px;
+  width: 60%; /* Adjusted width for better fit */
   border-radius: 50px;
   padding: 20px;
   padding-left: 50px;
-  margin-left: 350px;
+  margin-left: 200px; 
 }
 
 .image {
   background-color: rgba(222, 49, 81, 1);
-  height: 30px;
-  width: 30px;
-  border-radius: 50px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
 }
+
+
 
 .lower {
   color: rgba(107, 114, 128, 1);
-  font-size: small;
+  border: none;
+ text-align: center;
+ width: 80%;
+ background-color: transparent;
 }
+
+.lower:focus{
+  border: none;
+}
+
+
 
 .hero {
   padding: 50px 80px;
@@ -333,8 +345,11 @@ nav div ul {
   padding: 0 20px;
   cursor: pointer;
   color: rgb(156, 155, 155);
+  border-bottom: 2px solid rgba(243, 244, 246, 1);
+  padding-bottom: 10px;
 }
 .destination p:hover {
+  border-bottom: 2px solid rgba(0, 0, 0, 1);
   color: black;
 }
 .locations {
@@ -406,140 +421,3 @@ td {
   font-weight: 400;
 }
 
-/* Media query for phones */
-@media only screen and (max-width: 600px) {
-  nav {
-    padding: 10px;
-  }
-
-  nav img {
-    display: none;
-  }
-
-  nav div ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .search {
-    flex-direction: column;
-    padding: 10px;
-    text-align: center;
-    width: 90%;
-    margin: 10px auto;
-  }
-
-  .search div {
-    margin-bottom: 10px;
-  }
-
-  .search .image {
-    margin-top: 10px;
-  }
-
-  .search .image img {
-    width: 15px;
-    height: 15px;
-  }
-
-  .hero img {
-    width: 100%;
-  }
-
-  .img-text {
-    padding: 20px;
-  }
-
-  .img-text h1 {
-    font-size: 30px;
-    text-align: center;
-  }
-
-  .imflexible {
-    padding: 10px 15px;
-    font-size: 16px;
-  }
-
-  .inspiration h1 {
-    text-align: center;
-    font-size: 24px;
-  }
-
-  .cards {
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  .card {
-    width: 90%;
-    margin-bottom: 20px;
-  }
-
-  .card-content {
-    padding: 10px;
-  }
-
-  .card-title {
-    font-size: 20px;
-  }
-
-  .card-text {
-    font-size: 14px;
-  }
-
-  .discoverh1 {
-    text-align: center;
-    font-size: 24px;
-    margin-top: 20px;
-  }
-
-  .hero2,
-  .hero3 {
-    width: 90%;
-    margin: 20px 5%;
-  }
-
-  .gift {
-    padding: 20px 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .giftcard {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .gift-heading {
-    font-size: 30px;
-  }
-
-  .gift-button {
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-
-  .host {
-    padding: 20px 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .host h1 {
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-
-  .host button {
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-
-  main {
-    padding: 0 10px;
-  }
-}
