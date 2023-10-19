@@ -4,6 +4,10 @@
   font-family: "Inter", sans-serif;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 main {
   background-color: black;
   margin-top: -10px;
