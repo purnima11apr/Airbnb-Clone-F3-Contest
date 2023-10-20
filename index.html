@@ -10,7 +10,7 @@
 </head>
 <body>
    <!-- Navigation Bar -->
-<nav>
+<nav id="navBar1">
     <img src="assets/Vector.png"/>
     <div>
         <ul>
@@ -22,18 +22,12 @@
     <div>
         <ul>
             <li>Become a Host</li>
-            <li><i class="fa-solid fa-globe" style="color: #dee2e8;"></i></li>
+            <li><i class="fa-solid fa-globe" style="color: #484c52;"></i></li>
             <li><li class="profile-dropdown">
                 <div class="profile-button">
                     <img src="assets/menu.png" style="height: 20px; margin-right: 3px;">
                     <img src="assets/user.png"/>
                 </div>
-                <ul class="profile-options">
-                    <li><a href="#">My Bookings</a></li>
-                    <li><a href="#">Saved Listings</a></li>
-                    <li><a href="#">Profile Settings</a></li>
-                    <li><a href="#">Logout</a></li>
-                </ul>
             </li></li>
         </ul>
     </div>
@@ -42,27 +36,27 @@
 <main>
 <!-- Search Section -->
 <section class="search">
-   <div class="border">
+   <div>
     <label  class="upper">Location</label>
-     <input type="text" class="lower" placeholder="Where are you going?" />
+     <input type="text" id="locationInput" class="lower" placeholder="Where are you going?" />
    </div>
 
    <div class="border">
     <label  class="upper">Check in</label>
-    <input type="text" class="lower" placeholder="Add dates" onfocus="(this.type = 'date')" onblur="(this.type = 'text')" />
+    <input type="text" id="checkinInput" class="lower" placeholder="Add dates" onfocus="(this.type = 'date')" onblur="(this.type = 'text')" />
    </div>
 
    <div class="border">
     <label  class="upper">Check out</label>
-    <input type="text" class="lower" placeholder="Add dates" onfocus="(this.type = 'date')" onblur="(this.type = 'text')" />
+    <input type="text" id="checkoutInput" class="lower" placeholder="Add dates" onfocus="(this.type = 'date')" onblur="(this.type = 'text')" />
    </div>
 
    <div>
     <label  class="upper">Guests</label>
-    <input type="number" class="lower" placeholder="Add Guests" />
+    <input type="number" id="guestsInput" class="lower" placeholder="Add Guests" />
    </div>
 
-   <button class="image" id="searchInput"  onclick="fetchListings()"><a href="search.html"><img src="assets/search (1).png"/ style="width: 20px; height: 20px; margin-top:5px"></a></button>
+   <button class="image" id="searchInput"  onclick="redirectToSearchPage()"><img src="assets/search (1).png"/ style="width: 20px; height: 20px; margin-top:5px"></button>
 </section>
 
 <!--Hero Component -->

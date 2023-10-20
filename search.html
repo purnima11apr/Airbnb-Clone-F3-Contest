@@ -5,11 +5,165 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Airbnb - Holiday Homes & Apartment Rentals</title>
     <link rel="shortcut icon" href="assets/airbnb.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="listingsContainer">hello</div>
+      <!-- Navigation Bar -->
+      <nav id="navBar2">
+        <img src="assets/Vector (1).png"/>
 
+
+        <div class="search2">
+            <p id="locationText">Bordeaux</p>
+            <p id="datesText" class="border">feb 19-26</p>
+            <p id="guestsText">2 guests</p>
+            <button class="image2"><img src="assets/search (1).png"/ style="width: 15px; height: 15px; margin-top:5px"></button>
+        </div>
+       
+
+        <div>
+            <ul>
+                <li>Become a Host</li>
+                <li><i class="fa-solid fa-globe" style="color: #25272a;"></i></li>
+                <li><li class="profile-dropdown">
+                    <div class="profile-button">
+                        <img src="assets/menu.png" style="height: 20px; margin-right: 3px;">
+                        <img src="assets/user.png"/>
+                    </div>
+                </li></li>
+            </ul>
+        </div>
+      </nav>
+
+      <!--dropdowns not functional-->
+      <div class="searchDropdown">
+        <p class="filters">Price <i class="fa-solid fa-angle-down" style="color:rgba(55, 65, 81, 1);"></i></p>
+        <p class="filters">Type of place <i class="fa-solid fa-angle-down" style="color:rgba(55, 65, 81, 1);"></i></p>
+        <p class="color">|</p>
+        <p class="filters">Free cancellation</p>
+        <p class="filters">Wifi</p>
+        <p class="filters">Kitchen</p>
+        <p class="filters">Air conditioning</p>
+        <p class="filters">Washer</p>
+        <p class="filters">Iron</p>
+        <p class="filters">Dedicated workspace</p>
+        <p class="filters">Free parking</p>
+        <p class="filters">Dryers</p>
+        <p class="filters"><i class="fa-solid fa-sliders" style="color:rgba(55, 65, 81, 1)"></i> Filters</p>
+      </div>
+     
+
+      <div class="main-content">
+        <div id="cardContainer">
+            <p class="color">200+ stays in Bordeaux</p>
+            <div class="card2"> 
+                <!-- <div class="card2-image"><img src="assets/Image.jpg"/></div>
+                <div class="card2-discription">
+                <div class="card2-about">
+                    <div class="title"><p class="color">Entire home in Bordeaux</p>
+                    <h3>Bordeaux Gateway</h3>
+                    
+                </div>
+
+                <div class="inner-border color">
+                    <p>4-6 guests · Entire Home · 5 beds · 3 bath</p>
+                    <p>Wifi · Kitchen · Free Parking</p>
+                </div>
+                  <div class="review">
+                    <p>5.0 <i class="fa-solid fa-star" style="color: rgba(245, 158, 11, 1);"></i> <span class="color">(318 reviews)</span></p>
+                </div>
+                </div>
+
+                <div class="price-details">
+                    <p class="like" onclick="toggleLike(this)"><i class="fa-regular fa-heart" style="color: #000000;"></i></p>
+                    <p>$350 <span class="color">/night</span></p>
+                </div>
+                </div> -->
+            </div>
+
+            <div class="card2">
+                <!-- <div class="card2-image"><img src="assets/Image.jpg"/></div>
+                <div class="card2-discription">
+                <div class="card2-about">
+                    <div class="title"><p class="color">Entire home in Bordeaux</p>
+                    <h3>Bordeaux Gateway</h3>
+                    
+                </div>
+
+                <div class="inner-border color">
+                    <p>4-6 guests · Entire Home · 5 beds · 3 bath</p>
+                    <p>Wifi · Kitchen · Free Parking</p>
+                </div>
+                  <div class="review">
+                    <p>5.0 <i class="fa-solid fa-star" style="color: rgba(245, 158, 11, 1);"></i> <span class="color">(318 reviews)</span></p>
+                </div>
+                </div>
+
+                <div class="price-details">
+                    <p class="like" onclick="toggleLike(this)"><i class="fa-regular fa-heart" style="color: #000000;"></i></p>
+                    <p>$350 <span class="color">/night</span></p>
+                </div>
+                </div> -->
+            </div>
+
+            <div class="card2">
+                <!-- <div class="card2-image"><img src="assets/Image.jpg"/></div>
+                <div class="card2-discription">
+                <div class="card2-about">
+                    <div class="title"><p class="color">Entire home in Bordeaux</p>
+                    <h3>Bordeaux Gateway</h3>
+                    
+                </div>
+
+                <div class="inner-border color">
+                    <p>4-6 guests · Entire Home · 5 beds · 3 bath</p>
+                    <p>Wifi · Kitchen · Free Parking</p>
+                </div>
+                  <div class="review">
+                    <p>5.0 <i class="fa-solid fa-star" style="color: rgba(245, 158, 11, 1);"></i> <span class="color">(318 reviews)</span></p>
+                </div>
+                </div>
+
+                <div class="price-details">
+                    <p class="like" onclick="toggleLike(this)"><i class="fa-regular fa-heart" style="color: #000000;"></i></p>
+                    <p>$350 <span class="color">/night</span></p>
+                </div>
+                </div> -->
+            </div>
+
+            <div class="card2">
+                <!-- <div class="card2-image"><img src="assets/Image.jpg"/></div>
+                <div class="card2-discription">
+                <div class="card2-about">
+                    <div class="title"><p class="color">Entire home in Bordeaux</p>
+                    <h3>Bordeaux Gateway</h3>
+                    
+                </div>
+
+                <div class="inner-border color">
+                    <p>4-6 guests · Entire Home · 5 beds · 3 bath</p>
+                    <p>Wifi · Kitchen · Free Parking</p>
+                </div>
+                  <div class="review">
+                    <p>5.0 <i class="fa-solid fa-star" style="color: rgba(245, 158, 11, 1);"></i> <span class="color">(318 reviews)</span></p>
+                </div>
+                </div>
+
+                <div class="price-details">
+                    <p class="like" onclick="toggleLike(this)"><i class="fa-regular fa-heart" style="color: #000000;"></i></p>
+                    <p>$350 <span class="color">/night</span></p>
+                </div>
+                </div> -->
+            </div> 
+
+            
+            
+        </div>
+        <div id="map">
+            <img src="assets/Map.jpg" style="height: 470px; width: 600px;"/>
+        </div>
+      </div>
 
     <script src="script.js"></script>
 </body>

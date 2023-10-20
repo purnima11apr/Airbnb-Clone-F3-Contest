@@ -14,7 +14,7 @@ main {
   padding-top: 20px;
 }
 
-nav {
+#navBar1{
   background: black;
   display: flex;
   justify-content: space-between;
@@ -27,23 +27,23 @@ nav {
   z-index: 100;
 }
 
-nav div ul li {
+#navBar1 div ul li {
   list-style: none;
   margin: 5px;
 }
 
-nav div ul li:hover {
+#navBar1 div ul li:hover {
   text-decoration: underline;
   font-weight: bold;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
-nav div ul li a {
+#navBar1 div ul li a {
   text-decoration: none;
 }
 
-nav div ul {
+#navBar1 div ul {
   display: flex;
   justify-content: space-between;
 }
@@ -57,27 +57,14 @@ nav div ul {
   height: 40px;
   width: 80px;
   display: flex;
+  border : 1px solid lightgrey;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
   margin-top: -10px;
 }
 
-.profile-options {
-  display: none;
-  position: absolute;
-  background-color: #f8f8f8;
-  list-style-type: none;
-}
 
-.profile-options li {
-  padding: 5px 0;
-}
-
-.profile-button:hover + .profile-options,
-.profile-options:hover {
-  display: block;
-}
 
 .border {
   border-right: 1px solid rgb(208, 202, 202);
@@ -92,11 +79,15 @@ nav div ul {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  width: 60%; /* Adjusted width for better fit */
+  width: 60%; 
   border-radius: 50px;
   padding: 20px;
   padding-left: 50px;
   margin-left: 200px; 
+}
+
+.search input:hover{
+  cursor: pointer;
 }
 
 .image {
@@ -424,4 +415,144 @@ td {
   text-decoration: underline;
   font-weight: 400;
 }
+
+
+
+/* Search Page */
+
+#navBar2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  flex: 1;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+#navBar2 div ul li {
+  list-style: none;
+  margin: 5px;
+}
+
+#navBar2 div ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search2{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid lightgray;
+  padding: 8px  7px;
+  border-radius: 30px;
+  width: fit-content;
+}
+
+.image2{
+  background-color: rgba(222, 49, 81, 1);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: none;
+}
+
+.search2 p{
+  margin:8px;
+}
+
+.border{
+  border-left: 1px solid lightgrey;
+  padding-inline: 8px ;
+}
+
+.searchDropdown{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 10px;
+  position: sticky;
+  top: 92px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.filters{
+  border: 1px solid rgba(229, 231, 235, 1);
+  border-radius: 20px;
+  width: fit-content;
+  padding: 8px;
+  font-size: medium;
+  color:rgba(55, 65, 81, 1)
+}
+
+.color{
+  color:rgba(107, 114, 128, 1)
+}
+.main-content{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  border: 1px solid  rgba(229, 231, 235, 1);
+  padding-left: 20px;
+}
+
+#cardContainer{
+  padding-top: 20px;
+  height: 450px;
+  overflow-y: scroll;
+}
+
+
+.card2{
+  margin-top: 20px;
+  border-top: 1px solid rgba(229, 231, 235, 1);
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.card2-discription{
+  display: flex;
+}
+
+.card2-image{
+  border-radius: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.title{
+  margin-bottom: 10px;
+}
+.title h3{
+  margin-top: 10px;
+ font-size: x-large;
+ font-weight: 400;
+}
+
+.inner-border{
+  border-top: 1px solid rgba(229, 231, 235, 1);
+  border-bottom: 1px solid rgba(229, 231, 235, 1);
+  padding-block: 20px;
+  margin-block: 10px;
+}
+
+.review{
+  margin-top: 30px;
+}
+
+.like{
+  margin-bottom: 155px;
+  margin-left: 30px;
+  width: 20px;
+}
+
+
+
+
+
 
