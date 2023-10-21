@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#page3{
+    background-color: white;
+}
+
+#navBar3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    flex: 1;
+    z-index: 100;
+    background-color:  rgba(255, 255, 255, 1);
+    border-bottom:1px solid rgb(244, 238, 238) ;
+  }
+  
+  #navBar3 div ul li {
+    list-style: none;
+    margin: 5px;
+  }
+  
+  #navBar3 div ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .search3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid lightgray;
+    padding: 8px  7px;
+    border-radius: 30px;
+    width: fit-content;
+  }
+  
+  .image3{
+    background-color: rgba(222, 49, 81, 1);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: none;
+  }
+
+  .search3 p{
+    margin-inline:2px;
+    padding-right: 140px;
+    color: rgba(0, 0, 0, 1);
+  }
+
+  #page3{
+   padding-inline: 60px;
+   padding-block: 20px;
+  }
+
+  #hotel-name{
+    margin-top: 30px;
+    padding-left: 60px;
+    font-size: xx-large;
+    font-weight: 500;
+  }
+
+  .misc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 100px;
+    margin: 10px;
+    
+  }
+
+  .more-images{
+    width: 100%;
+    padding-inline: 50px;
+    
+  }
+
+  .hostReviews{
+    margin-top: 30px;
+    border-top: 1px solid lightgray;
+    margin-inline: 5px;
+    padding-block: 10px;
+    padding-inline: 40px;
+  }
+
+  .hostReviews h4{
+    font-weight: 500;
+    font-size: large;
+  }
+
+  .reviewFlex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .reviewFlex div{
+    
+    width: 400px;
+    padding-top: 10px;
+  }
+
+
+
+  .where{
+    margin-top: 30px;
+    border-top: 1px solid lightgray;
+    margin-inline: 5px;
+    padding-block: 10px;
+  }
+  .where h3{
+    font-size: 20px;
+    Line-height:32px;
+    font-weight: 500;
+    padding-left: 60px;
+    padding-block: 10px;
+  }
+
+  .host-map img{
+    height: 400px;
+    width: 1120px;
+    padding: 10px;
+    margin-inline: 50px;
+  }
+
+  .map-details p{
+    padding-block: 10px;
+    width: 88%;
+    text-align: start;
+    margin-left: 60px;
+    line-height: 24px;
+  }
+
+  .map-details a{
+    color: black;
+    cursor: pointer;
+  }
+  .aboutHost{
+    border-top: 1px solid lightgray;
+    padding-block: 10px;
+    margin-top: 30px;
+  }
+ .flex{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 290px;
+    display: flex;
+    justify-content: space-around;
+ }
+
+ .flex p{
+    color: rgb(199, 190, 190);
+    font-size:medium;
+    font-weight: 300;
+ }
+ .hostDetails{
+    margin-inline: 20px;
+ }
+ .hostDetails span{
+    padding-right: 10px;
+ }
+
+ .hostDescp{
+    width:400px;
+    margin-top: 20px;
+    padding-inline: 30px;
+ }
+
+ .hostDescp p{
+
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color:rgba(107, 114, 128, 1);
+padding-block: 10px;
+ }
+
+ .hostDescp button{
+    padding: 15px;
+    border: 1px solid black;
+    color: rgba(0, 0, 0, 1);
+    background: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    margin-block: 10px;
+ }
+
+.hostDescp button:hover{
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+ .wrap2{
+    width: 240px;
+ }
+
+  .thingToKnow{
+    border-top: 1px solid lightgray;
+    padding-block: 20px;
+    margin-top: 30px;
+  }
+
+.thingToKnow h4{
+font-size: 24px;
+font-weight: 500;
+line-height: 32px;
+letter-spacing: 0em;
+text-align: left;
+
+  }
+
+  .toFlex{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tobold{
+font-size: 20px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+padding-block: 10px;
+}
+
+.wrap{
+    width: 300px;
+}
+
+.space{
+    padding-block: 8px;
+    font-size: 18px;
+}
+
+.space a{
+   
+    color: black;
+    cursor: pointer;
+}
+  .footer1{
+    background: rgba(249, 250, 251, 1);
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 10px;
+  }
+  
+  .margin{
+    margin: 16px;
+  }
+
+  .places2, .places3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(75, 85, 99, 1);
+    margin-inline: 70px;
+  }
+
+  .footer-title{
+    margin-inline: 80px;
+    margin-block: 20px;
+    
+  }
+
+  .footer1 h3{
+    font-size:30px;
+    font-weight: 400;
+  }
+
+.bold{
+font-size: 18px;
+font-weight: 600;
+line-height: 24px;
+}
