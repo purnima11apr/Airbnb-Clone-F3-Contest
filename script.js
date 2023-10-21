@@ -14,7 +14,7 @@ async function getData() {
     const dynamicOptions = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '97145d29ddmsh64884c09eaba7b8p1e1586jsnfa9b32d0f2d9',
+            'X-RapidAPI-Key': '5f43322756mshe41a088bc4b309fp195aeejsn38aef24235a8',
             'X-RapidAPI-Host': 'airbnb13.p.rapidapi.com'
         }
     };
@@ -30,7 +30,7 @@ async function getData() {
         fetchedData.forEach(result => {
             result.results.forEach(listing => {
             cardContainer.insertAdjacentHTML('beforeend', `
-                <div class="card2">
+                <div class="card2" onclick="goToListingPage(${listing.id})">
                     <div class="card2-image"><img src="${listing.images[0]}" alt="Listing Image"/></div>
                     <div class="card2-discription">
                         <div class="card2-about">
@@ -76,6 +76,11 @@ function redirectToSearchPage() {
 
     const queryParams = `?location=${location}&checkin=${checkin}&checkout=${checkout}&guests=${guests}`;
     window.location = `search.html${queryParams}`;
+}
+
+function goToListingPage(listingId) {
+    // Redirect to the listing.html page with the specific listing ID
+    window.location.href = `listing.html?id=${listingId}`;
 }
 
 

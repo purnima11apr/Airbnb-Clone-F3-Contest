@@ -3,6 +3,15 @@
     padding: 0;
 }
 
+body{
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+a{
+  color: black;
+}
+
 #page3{
     background-color: white;
 }
@@ -82,12 +91,200 @@
     
   }
 
+  .booking-details{
+    width: 900px;
+    height: 450px;
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px;
+    gap: 16px;
+    margin-right: 20px;
+    border:1px solid lightgray;
+     margin-top: 20px;
+     box-shadow: 0 10px 10px 0 rgba(31, 41, 55, 0.04), 0 20px 25px 0 rgba(31, 41, 55, 0.1);
+  }
+  
+
+  .card-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .check{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    padding: 5px;
+    align-items: center;
+  }
+
+  .booking-details button{
+    margin-top: 20px;
+    padding-inline: 120px;
+    padding-block: 10px;
+    background: rgba(222, 49, 81, 1);
+    color: white;
+    border-radius: 8px;
+    border: none;
+  }
+
+  .not{
+   text-align: center;
+   padding: 10px;
+  }
+  .green{
+    color:rgba(16, 185, 129, 1);
+  }
+
+  .hotel-details{
+    margin-left: 70px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid lightgrey;
+    padding-block: 10px;
+  }
+
+  .hostImg{
+    margin-left: 100px;
+  }
+ .icon{
+     margin: auto;
+     padding-top: 15px;
+  }
+
+  .bold2 h5{
+     font-weight: 600;
+     font-size: 14px;
+     line-height: 24px;
+     margin-top: 5px;
+  }
+
+  .bold2 p{
+    color: rgba(107, 114, 128, 1);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 10px;
+  }
+
+  .more-details{
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    margin-block: 10px;
+    padding-block: 10px;
+    width: 65%;
+  }
+ 
+  .intro{
+    width: 65%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .intro p{
+     padding-block: 10px;
+  }
+
+  .bedroom{
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    margin-block: 10px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    width: 65%;
+  }
+  .bedroom h2{
+font-size: 20px;
+font-weight: 500;
+line-height: 32px;
+letter-spacing: 0em;
+text-align: left;
+padding-block: 5px;
+ }
+
+ .bedroom > p{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+ }
+
   .hostReviews{
     margin-top: 30px;
     border-top: 1px solid lightgray;
     margin-inline: 5px;
     padding-block: 10px;
     padding-inline: 40px;
+  }
+  .flex3{
+    display: flex;
+    justify-content: space-between;
+    padding-block: 10px;
+  }
+
+  .flex3 p{
+    padding-bottom: 15px;
+    color: rgba(0, 0, 0, 1);
+  }
+
+  .placeOffers{
+    border-bottom: 1px solid lightgray;
+    padding-block: 20px;
+    width: 65%;
+  }
+
+  .placeOffers h2{
+font-size: 24px;
+font-weight: 500;
+line-height: 32px;
+letter-spacing: 0em;
+text-align: left;
+
+  }
+
+  .placeOffers button{
+    padding: 10px;
+    background: transparent;
+    border-radius: 8px;
+    gap: 8px;
+  }
+
+  #calender{
+    margin-block: 10px ;
+    padding-top: 20px;
+  }
+
+  .calender-div{
+    width: 65%;
+    padding: 10px;
+
+  }
+  .calender-div h2{
+font-size: 24px;
+font-weight: 500;
+line-height: 32px;
+letter-spacing: 0em;
+text-align: left;
+
+  }
+
+  .calender-div>p{
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+
   }
 
   .hostReviews h4{
@@ -107,7 +304,51 @@
     padding-top: 10px;
   }
 
+  .reviews-container {
+    display: flex;
+    margin-top: 20px;
+}
 
+
+  .comments {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 50%;
+    margin: 10px;
+   padding-left: 40px;
+}
+
+.comment {
+    display: flex;
+    gap: 20px;
+}
+
+.flex2 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.comment img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.comment h3 {
+    margin: 0;
+}
+
+.comment p {
+    margin: 5px 0 0;
+}
+
+.comment-text {
+    margin-top: 5px;
+    font-style: italic;
+}
 
   .where{
     margin-top: 30px;
