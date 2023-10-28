@@ -28,7 +28,6 @@ async function getData() {
       result.results.forEach((listing) => {
         const card = document.createElement("div");
         card.classList.add("card2");
-        console.log(listing);
         card.onclick = function () {
           showBookingCostBreakdown(listing);
         };
