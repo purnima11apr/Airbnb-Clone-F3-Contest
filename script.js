@@ -12,8 +12,8 @@ async function getData() {
   const dynamicOptions = {
     method: "GET",
     headers: {
-      "X-RapidAPI-Key": "698ec81273msh2fd150581c59fd3p1ca232jsn9a59712a1ab8",
-      "X-RapidAPI-Host": "airbnb13.p.rapidapi.com",
+      'X-RapidAPI-Key': '99b0949a24msh080d1e4a7463ca8p185130jsn219e4faf8332',
+      'X-RapidAPI-Host': 'airbnb13.p.rapidapi.com'
     },
   };
 
