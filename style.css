@@ -14,7 +14,7 @@ main {
   padding-top: 20px;
 }
 
-#navBar1{
+#navBar1 {
   background: black;
   display: flex;
   justify-content: space-between;
@@ -57,14 +57,12 @@ main {
   height: 40px;
   width: 80px;
   display: flex;
-  border : 1px solid lightgrey;
+  border: 1px solid lightgrey;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
   margin-top: -10px;
 }
-
-
 
 .border {
   border-right: 1px solid rgb(208, 202, 202);
@@ -79,14 +77,14 @@ main {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  width: 60%; 
+  width: 60%;
   border-radius: 50px;
   padding: 20px;
   padding-left: 50px;
-  margin-left: 200px; 
+  margin-left: 200px;
 }
 
-.search input:hover{
+.search input:hover {
   cursor: pointer;
 }
 
@@ -98,21 +96,17 @@ main {
   border: none;
 }
 
-
-
 .lower {
   color: rgba(107, 114, 128, 1);
   border: none;
- text-align: center;
- width: 80%;
- background-color: transparent;
+  text-align: center;
+  width: 80%;
+  background-color: transparent;
 }
 
-.lower:focus{
+.lower:focus {
   border: none;
 }
-
-
 
 .hero {
   padding: 50px 80px;
@@ -377,7 +371,7 @@ main {
 }
 .footer-part2 {
   padding: 90px 80px;
-  background-color:  rgba(249, 250, 251, 1);
+  background-color: rgba(249, 250, 251, 1);
 }
 td,
 th {
@@ -416,11 +410,9 @@ td {
   font-weight: 400;
 }
 
-
-
 /* Search Page */
 
-#navBar2{
+#navBar2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -442,16 +434,16 @@ td {
   justify-content: space-between;
 }
 
-.search2{
+.search2 {
   display: flex;
   justify-content: space-between;
   border: 1px solid lightgray;
-  padding: 8px  7px;
+  padding: 8px 7px;
   border-radius: 30px;
   width: fit-content;
 }
 
-.image2{
+.image2 {
   background-color: rgba(222, 49, 81, 1);
   height: 30px;
   width: 30px;
@@ -459,16 +451,16 @@ td {
   border: none;
 }
 
-.search2 p{
-  margin:8px;
+.search2 p {
+  margin: 8px;
 }
 
-.border{
+.border {
   border-left: 1px solid lightgrey;
-  padding-inline: 8px ;
+  padding-inline: 8px;
 }
 
-.searchDropdown{
+.searchDropdown {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -478,32 +470,31 @@ td {
   background-color: rgba(255, 255, 255, 1);
 }
 
-.filters{
+.filters {
   border: 1px solid rgba(229, 231, 235, 1);
   border-radius: 20px;
   width: fit-content;
   padding: 8px;
   font-size: medium;
-  color:rgba(55, 65, 81, 1)
+  color: rgba(55, 65, 81, 1);
 }
 
-.color{
-  color:rgba(107, 114, 128, 1)
+.color {
+  color: rgba(107, 114, 128, 1);
 }
-.main-content{
+.main-content {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-  border: 1px solid  rgba(229, 231, 235, 1);
+  border: 1px solid rgba(229, 231, 235, 1);
   padding-left: 20px;
 }
 
-#cardContainer{
+#cardContainer {
   padding-top: 20px;
   height: 450px;
   overflow-y: scroll;
 }
-
 
 .card2 {
   margin-top: 20px;
@@ -515,7 +506,7 @@ td {
 
 .card2-discription {
   display: flex;
-  align-items: center; 
+  align-items: center;
   width: 100%;
   padding-left: 20px;
 }
@@ -525,6 +516,7 @@ td {
   height: 200px;
   border-radius: 15px;
   overflow: hidden;
+  padding-right: 20px;
 }
 
 .card2-image img {
@@ -534,13 +526,13 @@ td {
 }
 
 .title {
-  width: 300px; 
+  width: 300px;
   margin-bottom: 10px;
 }
 
 .title h3 {
   margin-top: 10px;
-  font-size: 24px; 
+  font-size: 24px;
   font-weight: 400;
 }
 
@@ -566,4 +558,100 @@ td {
   margin-left: auto;
   width: 20px;
   margin-right: 40px;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: 300px;
+  top: 150px;
+  width: 30%;
+  height: 100%;
+  overflow: auto;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.not {
+  text-align: center;
+  padding: 10px;
+}
+.green {
+  color: rgba(16, 185, 129, 1);
+}
+
+.hotel-details {
+  margin-left: 70px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid lightgrey;
+  padding-block: 10px;
+}
+
+.flex3 {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 10px;
+}
+
+#map {
+  height: 500px;
+  width: 40%;
+}
+
+/* CSS */
+#directionsButton {
+  background-color: #4caf50; /* Green background */
+  height: 50px;
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  text-align: center; /* Centered text */
+  text-decoration: none;
+  padding: 2px;
+  font-size: 12px; /* Font size */
+  margin: 4px; /* Margin */
+  transition-duration: 0.4s; /* Smooth transition on hover */
+  cursor: pointer; /* Cursor style */
+  border-radius: 2px; /* Rounded corners */
+}
+
+/* Change the background color when the button is hovered over */
+#directionsButton:hover {
+  background-color: #1a73e8;
 }
